@@ -139,3 +139,105 @@ div.other{
 div.other img{
     width: 40%;
 }
+
+/* Styling the menu */
+.menu{
+    /* padding: 0.625rem 2.25rem; */
+    margin: 2.25rem 0 0 0;
+}
+
+.menu ul{
+    background-color: #EFEFF7;
+    padding: 0.625rem 2.25rem;
+}
+
+.menu li{
+    color: #6C79B0;
+    padding: 1.25rem 0;
+    cursor: pointer;
+}
+
+h3 span{
+    display: inline-block;
+    padding: 0.625rem 0.9375rem;
+    border: 0.125rem solid #6C79B0;
+    border-radius: 50%;
+}
+
+.menu li:first-child span{
+    background-color: #6C79B0;
+    color: #fff;
+}
+
+.content{
+    padding: 2.5rem 0 0 0;
+}
+
+.content h2{
+    text-align: center;
+    width: 50%;
+    padding: 1.5rem 0 0 0;
+    border-top: 0.1875rem solid #FF5E13;
+    margin: 0 auto;
+}
+
+.content p{
+    color: #000;
+    font-weight: bold;
+    text-align: center;
+    padding: 0.75rem 0;
+}
+
+.content form{
+    margin: 1.25rem;
+    padding: 2.25rem 1.25rem 0;
+    background-color: #F27B37;
+    border-radius: 1.25rem;
+}
+
+.lowscreen{
+    padding: 1.25rem 0;
+    color: #fff;
+    display: flex;
+    flex-wrap: no-wrap;
+}
+
+.content input{
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+.content label{
+    padding: 0 0 0 1rem;
+}
+
+.pagination{
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.625rem 2.25rem;
+}
+
+.pagination a{
+    font-weight: bold;
+    color: #fff;
+    background-color: #155882;
+    padding: 1rem;
+    /* border-radius: 0.5rem; */
+}
+
+.pagination a:first-child{
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    border-right: 0.25rem solid #fff;
+}
+
+.pagination a:last-child{
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+
+
+/* Content that should be display for larger screens */
+.content-max{
+    display: none;
+}

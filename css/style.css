@@ -241,3 +241,212 @@ h3 span{
 .content-max{
     display: none;
 }
+
+.result_banner, .result_footer{
+    display: flex;
+    justify-content: center;
+    /* background: url(../images/doctor.svg) center no-repeat;
+    height: 50rem; */
+}
+
+.result_banner img, .result_footer img{
+    width: 35%;
+}
+
+.results{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /*background: url(../images/our_neighborhood.svg) center no-repeat; */
+    width: 80%;
+    /* height: 60rem; */
+    padding: 1.25rem 2.5rem;
+    margin: 0 auto;
+    background-color: rgba(108, 121, 176, 0.1);
+    border-radius: 1.25rem;
+}
+
+.results > p:nth-child(1){
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    /* width: 50%; */
+    /* margin: 0 auto; */
+    padding: 1.5rem 2.5rem;
+    background-color: rgba(48, 219, 20, 0.9);
+    text-align: center;
+    border-radius: 0.625rem;
+}
+
+.results > p:nth-child(1) + p, .sms, .links p{
+    font-weight: bold;
+    padding: 2.5rem 0;
+}
+
+.advices{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+    padding: 1.25rem;
+    /* background-color: rgba(255, 255, 255, 0.1); */
+}
+
+.advices li, .links li{
+    padding: 1.25rem 0;
+}
+
+.advices span{
+    font-weight: bold;
+}
+
+.links li a{
+    text-decoration: underline;
+}
+
+
+/* Targeting the screens greater or equal to 900px */
+@media screen and (min-width: 900px){
+
+    /* Styling the reusable parts */
+    section, .banneroverlay{
+        display: flex;
+    }
+
+    section{
+        justify-content: flex-end;
+    }
+
+    /* Styling the header */
+    header{
+        justify-content: space-between
+    }
+
+    nav{
+        padding-right: 5.25rem;
+    }
+    /* Styling the main part */
+    section{
+        padding: 0.625rem 0 4.8125rem 0;  /*Gonna see*/
+        background-color: #EE752C;
+    }
+
+    section h3{
+        width: 30%;
+        text-align: left;
+    }
+
+    /* Styling the banner and banneroverlay */
+    .banneroverlay{
+        padding: 0 5.125rem;
+    }
+
+    .banneroverlay form{
+        padding: 5.125rem 2.25rem; 
+        width: 70%;  
+        position: relative;
+        bottom: 3.4375rem;
+    }
+
+    input:not(input[type = "checkbox"]){
+        padding: 2%;
+    }
+
+    div.other{
+        align-items: center; 
+    }
+
+    div.other img{
+        width: 60%;
+        border-top: 0.0625rem solid #EDEDED;
+        border-bottom: 0.0625rem solid #EDEDED;
+        padding: 1.25rem 0;
+        /* align-self: center; */
+    }
+
+    /* Quizz trying */
+    .content{
+        display: none;
+    }
+
+    /* .content form{
+        display: flex;
+    }
+
+    .content label{
+        padding: 0 0 1.25rem 0;
+    } */
+
+    .menu ul{
+        display: flex;
+        justify-content: space-around;
+        padding: 0.625rem 2.25rem 2.25rem 4.25rem;
+        margin-bottom: 4.125rem;
+    }
+
+    .content-max{
+        display: block;
+    }
+
+    .content-max{
+        padding: 2.5rem 2.25rem 0;
+    }
+    
+    .content-max h2{
+        text-align: center;
+        color: #6C79B0;
+        width: 50%;
+        padding: 1.5rem 0 0 0;
+        border-top: 0.1875rem solid #FF5E13;
+        margin: 0 auto;
+    }
+    
+    .content-max p{
+        color: #000;
+        font-weight: bold;
+        text-align: center;
+        padding: 1rem 0;
+    }
+    
+    .content-max form{
+        margin: 3.25rem 0;
+        padding: 3.25rem 1.25rem;
+        background-color: #F27B37;
+        border-radius: 1.25rem;
+    }
+
+    .content-max form input{
+        width: 1.25rem;
+        height: 1.25rem;
+    }
+    
+    .content-max form label{
+        padding: 0 0 2rem 0.5rem;
+        color: #fff;
+    }
+
+    .content-max form{
+        display: flex;
+    }
+
+    /* Styling the results page */
+    .result_check{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .results{
+        flex-shrink: 1.25;
+        
+    }
+
+    .result_banner, .result_footer{
+        flex-shrink: 2;
+    }
+
+    .result_banner img, .result_footer img{
+        width: 100%;
+    }
+
+}

@@ -12,3 +12,130 @@ ul{
 a{
     text-decoration: none;
 }
+/* Styling the reusable parts */
+.wrapper{
+    width: 100%;
+    max-width: 1750px;
+    margin: 0 auto;
+    padding: 0.625rem 0;
+}
+
+header, nav, header ul, .btn, div.other{
+    display: flex;
+}
+
+/* Styling the header */
+header{
+    border-top: 0.125rem solid #EDEDED;
+    border-right: 0.125rem solid #EDEDED;
+    justify-content: space-evenly;
+    padding: 0 0 3.125rem 0;
+    flex-wrap: wrap;
+}
+
+header img{
+    width: 15%;
+    padding-left: 1.25rem;
+}
+
+nav{
+    width: 45%;
+    
+}
+
+nav a{
+    color: #000;
+}
+
+nav ul{
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* Styling the main part */
+section{
+    padding: 0.625rem 0 2.8125rem 0;  /*Gonna see*/
+    background-color: #EE752C;
+}
+
+section h3{
+    color: #fff;
+    text-transform: capitalize;
+    text-align: center;
+    padding: 1.25rem 0 0 0;
+}
+
+.banneroverlay{
+    background-color: #034F89;
+}
+
+.banneroverlay form{   
+    padding: 3.125rem 6.25rem;
+    background-color: #fff;
+    width: 70%;
+    margin: 0 auto;
+}
+
+h4{
+    color: #8CABBC;
+}
+
+h4, h4 + p, form p:last-child{
+    text-align: center;
+}
+
+h4 + p{
+    padding: 1.25rem 0;
+}
+
+input:not(input[type = "checkbox"]):not(input[type = "radio"]){
+    display: block;
+    width: 100%;
+    padding: 5%;
+    margin: 1.25rem 0 0 0;
+}
+
+a[title="connexion"]{
+    display: block;
+    padding: 0 0 0 0.625rem;
+    margin-left: 0.625rem;
+}
+
+button{
+    border: none;
+    color: #fff;
+    background-color: #388FD3;
+    padding: 0.9375rem 1.25rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 0.7rem;
+}
+
+.btn{
+    justify-content: flex-end;
+}
+
+.btn + p{
+    padding: 0.9375rem 0 1.875rem 0;
+    text-align: center;
+}
+
+p + ul {
+    display: flex;
+    justify-content: center;
+    padding: 0 0 1.5625rem 0;
+}
+
+p + ul li:nth-child(2){
+    margin: 0 1.5625rem;
+}
+
+div.other{
+    padding: 1.5625rem 0 0 0;
+    justify-content: center;
+}
+
+div.other img{
+    width: 40%;
+}

@@ -290,32 +290,7 @@ p#sign-up a:hover {
         }
         
 }
-/*===============*/
-/*Summary from result page*/
-/*===============*/
-.summary{
-    width: 85%;
-    margin: 20px auto 60px;
-    padding: 1em;
-    background: lightgrey;
-    background: #d3d3d382;
-    border-radius: 4px;
-    box-shadow:0px 0px 2px 1px #000;
-    display: grid;
-    grid-template-columns: repeat(5,1fr);
-}
 
-.summary-item .content .number{
-    float: left;
-    padding: 10px 14px;
-    margin: 0 10px;
-    border: 2px solid #034F89;
-    border-radius: 50%;
-    transition: 0.4s;
-}
-.summary-item .content .number:hover{
-    background-color: #fff;
-}
 .divider{
     width: 30%;
     height: 3px;

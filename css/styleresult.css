@@ -420,6 +420,7 @@ section#section1{
     /* background-image: url(../img/undraw_medical_research_qg4d.png); */
     background-repeat: no-repeat;
     background-size: auto 100%;
+    overflow-x: hidden;
 }
 section .result-indication{
     position: absolute;

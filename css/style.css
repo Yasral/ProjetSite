@@ -24,7 +24,7 @@ header, nav, header ul, .btn, div.other{
     display: flex;
 }
 
-/* Styling the header */
+
 header{
     border-top: 0.125rem solid #EDEDED;
     border-right: 0.125rem solid #EDEDED;
@@ -53,9 +53,9 @@ nav ul{
     justify-content: space-around;
 }
 
-/* Styling the main part */
+
 section{
-    padding: 0.625rem 0 2.8125rem 0;  /*Gonna see*/
+    padding: 0.625rem 0 2.8125rem 0; 
     background-color: #EE752C;
 }
 
@@ -140,9 +140,8 @@ div.other img{
     width: 40%;
 }
 
-/* Styling the menu */
+
 .menu{
-    /* padding: 0.625rem 2.25rem; */
     margin: 2.25rem 0 0 0;
 }
 
@@ -165,8 +164,7 @@ h3 span{
 }
 
 .menu li:first-child span{
-    background-color: #6C79B0;
-    color: #fff;
+    color: #6C79B0;
 }
 
 .content{
@@ -222,7 +220,6 @@ h3 span{
     color: #fff;
     background-color: #155882;
     padding: 1rem;
-    /* border-radius: 0.5rem; */
 }
 
 .pagination a:first-child{
@@ -448,5 +445,11 @@ h3 span{
     .result_banner img, .result_footer img{
         width: 100%;
     }
+
+    .input{
+        color: #ffa502;
+       font-size: 1.5rem;
+    }
+  
 
 }

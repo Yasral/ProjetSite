@@ -6,107 +6,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title>Quiz</title>
+    <script src="js/quiz.js"></script>
 </head>
 <body>
     <div class="wrapper">
-            <!-- Header -->
-            <header>
-                <img src="../images/login.svg" alt="logo">
-                <nav>
-                    <ul>
-                        <li><a href="#">Lorem ipsum</a></li>
-                        <li><a href="#">Lorem ipsum</a></li>
-                        <li><a href="#">Lorem ipsum</a></li>
-                        <li><a href="#">Lorem ipsum</a></li>
-                        <li><a href="#">Lorem ipsum</a></li>
-                    </ul>
-                </nav>
-            </header>
-            <!-- Header -->
-    
-    <main>
-        <article class="menu">
-            <ul>
-                <li>
-                    <h3><span>1</span> Personnalite</h3>
-                    <div class="content">
-                        <h2>Question 1</h2>
-                        <p>
-                            Revenez sur l'annee derniere, avez vous commence et termine un de vos differents projets? 
-                        </p>
-                        <p>
-                            Un projet peut etre par exemple, construire, reparer ou fabriquer quelque chose, ecrire un livre, aller en formation continue...
-                        </p>
-                        <form>
-        
-                                    <div class="lowscreen">
-                                        <input type="radio" name="r1" id="r1">
-                                        <label for="r1">Commence et termine un certain nombre de projets</label>
-                                    </div>
-    
-                                    <div class="lowscreen">
-                                        <input type="radio" name="r2" id="r2">
-                                        <label for="r2">Commence beaucoup de choses mais en ai termine tres peu</label>
-                                    </div> 
-                                 
-                                    <div class="lowscreen">
-                                        <input type="radio" name="r3" id="r3" checked="checked">
-                                        <label for="r3">N'ai pas fait grand chose pour moi mais beaucoup pour les autres</label>
-                                    </div>
-                                    
-                                    <div class="lowscreen">
-                                        <input type="radio" name="r4" id="r4">
-                                        <label for="r4">Ete beaucoup trop occupe pour m'occupe de mes propres affaires</label>
-                                    </div> 
-                              
-                        </form>
-                    </div>
-                    
-                </li>
-                <li>
-                    <h3><span>2</span> Sante</h3>
-                </li>
-                <li>
-                    <h3><span>3</span> Competences, Experience et Formation</h3>
-                </li>
-                <li>
-                    <h3><span>4</span> Approche de l'entrepreunariat</h3>
-                </li>
-                <li>
-                    <h3><span>5</span> Approche Technique</h3>
-                </li>
-                <li>
-                    <h3><span>6</span> Note</h3>
-                </li>
-            </ul>
-            <div class="content-max">
-                <h2>Question 1</h2>
-                <p>
-                    Revenez sur l'annee derniere, avez vous commence et termine un de vos differents projets? 
-                    
-                </p>
-                <p>
-                    Un projet peut etre par exemple, construire, reparer ou fabriquer quelque chose, ecrire un livre, aller en formation continue...
-                </p>
-                <form>
-                    <input type="radio" name="r1" id="r1">
-                    <label for="r1">Commence et termine un certain nombre de projets</label>
-                    <input type="radio" name="r2" id="r2">
-                    <label for="r2">Commence beaucoup de choses mais en ai termine tres peu</label>
-                    <input type="radio" name="r3" id="r3" checked="checked">
-                    <label for="r3">N'ai pas fait grand chose pour moi mais beaucoup pour les autres</label>
-                    <input type="radio" name="r4" id="r4">
-                    <label for="r4">Ete beaucoup trop occupe pour m'occupe de mes propres affaires</label>
-    
-                </form>
-            </div>
-    
-            <div class="pagination">
-                <a href="#">Suivant</a>
-                <a href="#">1/26</a>
-            </div>
-        </article>
-    </main>
-</div>
+        <header>
+            <img src="images/login.svg" alt="logo">
+            <nav>
+                <ul>
+                    <li><a href="#">Lorem ipsum</a></li>
+                    <li><a href="#">Lorem ipsum</a></li>
+                    <li><a href="#">Lorem ipsum</a></li>
+                    <li><a href="#">Lorem ipsum</a></li>
+                    <li><a href="#">Lorem ipsum</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <article class="menu">
+                 <ul>
+                    <li> 
+                        <h3><a href="#" id= "temperature"><span>1</span> Temperature</a></h3>
+                    </li>
+                    <li>
+                        <h3><a href="#" id="fievre"><span>2</span>Fiévre</a></h3>
+                    </li>
+                    <li>
+                        <h3><a href="#" id="mauTete"><span>3</span>Maux de téte</a></h3>
+                    </li>
+                    <li>
+                        <h3><a href="#" id="difResp"><span>4</span>Difficultés Respiratoires</a></h3>
+                    </li>
+                    <li>
+                        <h3><a href="#" id="malg"><span>5</span>Mal de gorge</a></h3>
+                    </li>
+                    <li>
+                        <h3><a href="#" id="diarr"><span>6</span>Diarrhée</a></h3>
+                    </li>
+                </ul> 
+                <div class="content-max">
+                    <h2 id= "question" name= "question"></h2>
+                    <p id="para"></p>
+                     
+                    <form id="form">
+                        <!-- <input type="radio" name="r" id ="r" value="température inférieur à 36°C">
+                        <label for="r"></label>
+                        <input type="radio" name="r" id ="r" value="Entre 36 et 37°C">
+                        <label for="r"></label>
+                        <input type="radio" name="r" id ="r" value="Température supérieur à 37°C" >
+                        <label for="r"></label>  -->
+                    </form>
+                </div>
+
+                <div class="pagination">
+                    <a href="#" id="suiv" >Suivant</a>
+                    <a id="num" href="#">1/6</a>
+                </div>
+            </article>
+        </main>
+    </div>
 </body>
+
 </html>
